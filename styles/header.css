@@ -1,0 +1,61 @@
+@import "../styles/pallet.css";
+
+header {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+header img {
+  cursor: pointer;
+  /*   border: 1px dashed red;
+ */
+}
+
+.search {
+  width: 40%;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.search input {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--input);
+  border-radius: 5px;
+}
+
+.search input::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.search input:focus::placeholder {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.search input:focus ~ span,
+.search input:not(:placeholder-shown) ~ span {
+  transform: translateY(-23px);
+  left: 10px;
+  font-size: 0.9rem;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.search span {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  pointer-events: none;
+  transition: 0.3s all;
+}
+
+.search img {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  background-color: var(--input);
+}
