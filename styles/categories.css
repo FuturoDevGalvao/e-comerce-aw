@@ -1,0 +1,41 @@
+@import "./pallet.css";
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+.categories ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.categories li {
+  height: 2.3rem;
+  width: 6rem;
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.categories li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.categories li a:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
