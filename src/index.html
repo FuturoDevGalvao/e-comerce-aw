@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../dist/output.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/categories.css" />
-    <link rel="stylesheet" href="../styles/best-sellers.css" />
-    <title>DEV SE VESTIR - HOME PAGE</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/categories.css" />
+    <title>DEV SE VESTIR</title>
   </head>
   <body>
     <header>
@@ -41,68 +41,96 @@
         <a href="" class="sign-up sign-button">Cadastrar-se</a>
       </div>
     </header>
-    <nav class="categories">
-      <ul>
-        <li>
-          <a href="#">bonés</a>
-        </li>
-        <li>
-          <a href="#">camisetas</a>
-        </li>
-        <li>
-          <a href="#">moletons</a>
-        </li>
-        <li>
-          <a href="#">calças</a>
-        </li>
-        <li>
-          <a href="#">meias</a>
-        </li>
-        <li>
-          <a href="#">sapatos</a>
-        </li>
-      </ul>
-    </nav>
 
-    <section class="best-sellers-cotain">
-      <div class="best-sellers-title">
-        <h1>Mais Vendidos</h1>
+    <section class="categories-cotain">
+      <div class="categories-title">
+        <h1>Categorias</h1>
       </div>
-      <div class="best-sellers">
+      <div class="categories">
         <div class="card-contain">
-          <div class="card">
-            <img src="../img/boné.jpg" alt="boné" />
-            <div class="info-product">
-              <span class="desc">Boné I love Code</span>
-              <span class="value">$ 29,90</span>
-              <a href="#">Comprar</a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../img/camiseta.jpg"
-              alt="camiseta"
-            />
-            <span></span>
-          </div>
-          <div class="card">
-            <img src="../img/moletom.jpg" alt="moletom" />
-            <span></span>
-          </div>
+          <a
+            href="../html/moletons.html"
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/moletom.jpg);
+            "
+          >
+            <span>Moletons</span>
+            <p>Clique para conferir</p>
+          </a>
+          <a
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/boné.jpg);
+            "
+          >
+            <span>Bonés</span>
+            <p>Clique para conferir</p>
+          </a>
+          <a
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/camiseta.jpg);
+            "
+          >
+            <span>Camisas</span>
+            <p>Clique para conferir</p>
+          </a>
         </div>
         <div class="card-contain">
-          <div class="card">
-            <img src="../img/calça.jpg" alt="calça" />
-            <span></span>
-          </div>
-          <div class="card">
-            <img src="../img/meia.jpg" alt="meia" />
-            <span></span>
-          </div>
-          <div class="card">
-            <img src="../img/sapato.jpg" alt="sapato" />
-            <span></span>
-          </div>
+          <a
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/calça.jpg);
+            "
+          >
+            <span>Calças</span>
+            <p>Clique para conferir</p>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/meia.jpg);
+            "
+          >
+            <span>Meias</span>
+            <p>Clique para conferir</p>
+          </a>
+          <a
+            href="#"
+            class="card"
+            style="
+              background-image: linear-gradient(
+                  rgba(17, 17, 17, 0.5),
+                  rgba(20, 20, 20, 0.8)
+                ),
+                url(../img/sapato.jpg);
+            "
+          >
+            <span>Sapatos</span>
+            <p>Clique para conferir</p>
+          </a>
         </div>
       </div>
     </section>

@@ -141,3 +141,8 @@ header img {
   transition: 0.3s;
   border-color: transparent;
 }
+
+a {
+  text-decoration: none;
+  color: var(--font);
+}

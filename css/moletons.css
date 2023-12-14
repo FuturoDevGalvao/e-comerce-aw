@@ -1,0 +1,122 @@
+.moletons-contain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.moletons-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.moletons-title h1 {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 0;
+}
+
+.moletons-title h1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 0.4rem;
+  background-color: var(--theme);
+  z-index: -1;
+  border-radius: 5px 0 5px 0;
+}
+
+.moletons-title h1::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 0.4rem;
+  background-color: var(--theme);
+  z-index: -1;
+  border-radius: 0 5px 0 5px;
+}
+
+.moletons {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 68%;
+}
+
+.info {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.btn-buy {
+  border: 2px solid var(--theme);
+  border-radius: 5px;
+  width: 60%;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.btn-buy:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+  transition: 0.3s all;
+}
+
+#value {
+  font-weight: 800;
+}
