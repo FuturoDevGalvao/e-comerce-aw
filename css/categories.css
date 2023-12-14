@@ -77,6 +77,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: flipInX;
+  animation-duration: 1.2s;
 }
 
 .card span {

@@ -1,6 +1,7 @@
 .moletons-contain {
   width: 100%;
   display: flex;
+  padding-bottom: 4rem;
   flex-direction: column;
 }
 
@@ -9,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .moletons-title h1 {
@@ -54,22 +55,23 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1rem;
+  animation-name: zoomInDown;
+  animation-duration: 1s;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 400px;
-  width: 300px;
+  height: 420px;
+  width: 320px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: 0.3s;
   border-radius: 5px;
-  overflow: hidden;
-  margin: 1rem;
+  margin: 2rem 0.5rem;
 }
 
 .card:hover {
@@ -77,6 +79,38 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: 0.3s;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: -2rem;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.promo span {
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  font-size: 0.9rem;
 }
 
 .card img {
@@ -117,6 +151,50 @@
   transition: 0.3s all;
 }
 
+.value-contain {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #value {
   font-weight: 800;
+}
+
+#value-old {
+  color: var(--font);
+  font-weight: 500;
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+}
+
+.back-home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.back-home a {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.back-home a:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s all;
+  background-color: rgba(0, 0, 0, 0.877);
 }
