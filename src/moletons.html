@@ -14,30 +14,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/moletons.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="icon" href="../img/logo-icon.png" />
     <title>DEV SE VESTIR - MOLETONS</title>
   </head>
-  <body>
+  <body class="dark:bg-zinc-900 dark:text-white">
     <header>
-      <img src="../img/logo.png" alt="logo" width="150px" />
+      <a href="./index.html">
+        <img
+          id="logo"
+          src="../img/logo-white-theme.png"
+          alt="logo"
+          width="150px"
+        />
+      </a>
       <div class="search">
         <input
+          class="dark:text-black"
           type="text"
           placeholder="O que você procura?"
-          style="border: none; padding: 0.8rem; font-size: 1rem"
         />
-        <span style="bottom: 0.6rem">Busque aqui</span>
-        <img
-          src="../img/search_icon.svg"
-          alt="search"
-          width="25px"
-          style="bottom: 0.6rem"
-        />
+        <span class="dark:text-black">Busque aqui</span>
+        <img src="../img/search_icon.svg" alt="search" width="25px" />
       </div>
       <a class="map" href="#" title="rastrear pedido">
-        <img src="../img/map_pin_icon.svg" alt="map" width="25px" />
+        <img src="../img/map_pin_icon.svg" alt="map" width="30px" />
         <div class="map-text-contain">
           <span class="map-text-1">Onde está o meu produto?</span>
           <span class="map-text-2">Rastrear Pedido</span>
@@ -53,6 +58,10 @@
       </div>
     </header>
 
+    <div class="theme-button">
+      <img src="../img/sun_icon.svg" alt="" width="30px" />
+    </div>
+
     <section class="moletons-contain">
       <div class="moletons-title">
         <h1>Moletons</h1>
@@ -65,12 +74,12 @@
             </div>
             <img src="../img/moletom.jpg" alt="" width="100px" />
             <div class="info">
-              <p class="title">Moletom - Local Host</p>
+              <p class="name">Moletom - Local Host</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
 
@@ -81,12 +90,12 @@
 
             <img src="../img/moletom2.jpg" alt="" width="100px" />
             <div class="info">
-              <p class="title">Moletom - Hacker</p>
+              <p class="name">Moletom - Hacker</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
           <div class="card">
@@ -97,12 +106,12 @@
             <img src="../img/moletom3.jpg" alt="" width="100px" />
 
             <div class="info">
-              <p class="title">Moletom - Python</p>
+              <p class="name">Moletom - Python</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
         </div>
@@ -114,12 +123,12 @@
             </div>
             <img src="../img/moletom4.jpg" alt="" width="100px" />
             <div class="info">
-              <p class="title">Moletom - Docker Kill</p>
+              <p class="name">Moletom - Docker Kill</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
           <div class="card">
@@ -128,12 +137,12 @@
             </div>
             <img src="../img/moletom5.jpg" alt="" width="100px" />
             <div class="info">
-              <p class="title">Moletom - In Training</p>
+              <p class="name">Moletom - In Training</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
           <div class="card">
@@ -142,19 +151,22 @@
             </div>
             <img src="../img/moletom6.jpg" alt="moletom" width="100px" />
             <div class="info">
-              <p class="title">Moletom - Linux Experte</p>
+              <p class="name">Moletom - Linux Experte</p>
               <div class="value-contain">
-                <span id="value-old">R$ 125,99</span>
-                <span id="value">R$ 89,90</span>
+                <span class="value-old">R$ 125,99</span>
+                <span class="value">R$ 89,90</span>
               </div>
-              <a href="#" class="btn-buy">Comprar</a>
+              <a href="./purchase.html" class="btn-buy">Comprar</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <div class="back-home">
-      <a href="../src/index.html">⇦ Voltar para a lista de categorias</a>
+      <a href="./index.html">⇦ Voltar para a lista de categorias</a>
     </div>
+
+    <script src="../js/moletons.js"></script>
+    <script src="../js/theme.js"></script>
   </body>
 </html>

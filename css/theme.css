@@ -1,0 +1,21 @@
+.theme-button {
+  position: absolute;
+  top: 11rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  right: 2rem;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-button:hover {
+  box-shadow: rgb(204, 219, 232) 0px 30px 60px -12px inset;
+  transition: 0.3s;
+}
+
+.theme-button img {
+  height: 2rem;
+  width: 2rem;
+}

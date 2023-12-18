@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/purchase.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="icon" href="../img/logo-icon.png" />
+    <title>DEV SE VESTIR - COMPRAR</title>
+  </head>
+  <body class="dark:bg-zinc-900 dark:text-white">
+    <header>
+      <a href="./index.html">
+        <img
+          id="logo"
+          src="../img/logo-white-theme.png"
+          alt="logo"
+          width="150px"
+        />
+      </a>
+      <div class="search">
+        <input
+          class="dark:text-black"
+          type="text"
+          placeholder="O que você procura?"
+        />
+        <span class="dark:text-black">Busque aqui</span>
+        <img src="../img/search_icon.svg" alt="search" width="25px" />
+      </div>
+      <a class="map" href="#" title="rastrear pedido">
+        <img src="../img/map_pin_icon.svg" alt="map" width="30px" />
+        <div class="map-text-contain">
+          <span class="map-text-1">Onde está o meu produto?</span>
+          <span class="map-text-2">Rastrear Pedido</span>
+        </div>
+      </a>
+      <a class="bag" href="#" title="bolsa de compras">
+        <img src="../img/shopping_bag_icon.svg" alt="bag" width="30px" />
+        <span>Pedidos</span>
+      </a>
+      <div class="sign">
+        <a href="" class="sign-in sign-button">Entrar</a>
+        <a href="" class="sign-up sign-button">Cadastrar-se</a>
+      </div>
+    </header>
+
+    <div class="theme-button">
+      <img src="../img/sun_icon.svg" alt="" width="30px" />
+    </div>
+
+    <section class="product-contain">
+      <div class="product">
+        <div class="product-img-contain"></div>
+        <div class="product-desc-contain">
+          <div class="desc">
+            <h1 id="name-product">Moletom</h1>
+            <div class="size-product-contain">
+              <span>Tamanho</span>
+              <div class="size-product">
+                <div class="size">2P</div>
+                <div class="size">P</div>
+                <div class="size">M</div>
+                <div class="size">G</div>
+                <div class="size">2G</div>
+                <div class="size">3G</div>
+                <div class="size">4G</div>
+              </div>
+            </div>
+            <div class="values-product">
+              <p><span id="old-value">0,00</span></p>
+              <p><span id="value">0,00</span></p>
+            </div>
+            <div class="payment-methods">
+              <span>Métodos de pagamento:</span>
+              <div class="payments">
+                <i class="fa-brands fa-pix dark:text-white"></i>
+              </div>
+              <div class="payments">
+                <i class="fa-solid fa-credit-card dark:text-white"></i>
+              </div>
+              <div class="payments">
+                <i class="fa-solid fa-barcode dark:text-white"></i>
+              </div>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <div class="calculate-shipping">
+              <span>Frete e prazo</span>
+              <input type="text" placeholder="Insira seu CEP" />
+              <button class="btn-calc">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-home">
+      <a href="./moletons.html">⇦ Voltar para a lista de moletons</a>
+    </div>
+
+    <script src="../js/purchase.js"></script>
+    <script src="../js/theme.js"></script>
+    <script
+      src="https://kit.fontawesome.com/638bd1bffb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

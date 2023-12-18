@@ -16,21 +16,32 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/categories.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="icon" href="../img/logo-icon.png" />
     <title>DEV SE VESTIR</title>
   </head>
-  <body>
+  <body class="dark:bg-zinc-900 dark:text-white">
     <header>
-      <img src="../img/logo.png" alt="logo" width="150px" />
+      <img
+        id="logo"
+        src="../img/logo-white-theme.png"
+        alt="logo"
+        width="150px"
+      />
       <div class="search">
-        <input type="text" placeholder="O que você procura?" />
-        <span>Busque aqui</span>
+        <input
+          class="dark:text-black"
+          type="text"
+          placeholder="O que você procura?"
+        />
+        <span class="dark:text-black">Busque aqui</span>
         <img src="../img/search_icon.svg" alt="search" width="25px" />
       </div>
       <a class="map" href="#" title="rastrear pedido">
-        <img src="../img/map_pin_icon.svg" alt="map" width="25px" />
+        <img src="../img/map_pin_icon.svg" alt="map" width="30px" />
         <div class="map-text-contain">
           <span class="map-text-1">Onde está o meu produto?</span>
           <span class="map-text-2">Rastrear Pedido</span>
@@ -46,6 +57,10 @@
       </div>
     </header>
 
+    <div class="theme-button">
+      <img src="../img/sun_icon.svg" alt="" width="30px" />
+    </div>
+
     <section class="categories-cotain">
       <div class="categories-title">
         <h1>Categorias</h1>
@@ -53,7 +68,7 @@
       <div class="categories">
         <div class="card-contain">
           <a
-            href="../html/moletons.html"
+            href="./moletons.html"
             class="card"
             style="
               background-image: linear-gradient(
@@ -138,5 +153,6 @@
         </div>
       </div>
     </section>
+    <script src="../js/theme.js"></script>
   </body>
 </html>

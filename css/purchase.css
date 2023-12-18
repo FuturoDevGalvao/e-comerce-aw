@@ -1,0 +1,243 @@
+@import "../css/pallet.css";
+
+.product-contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.product {
+  height: 600px;
+  width: 70%;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  animation-name: slideInUp;
+  animation-duration: 1.5s;
+}
+
+.product-img-contain {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-desc-contain {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-product {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-top: 0.5rem;
+}
+
+#name-product::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -0.1rem;
+  width: 50%;
+  height: 0.4rem;
+  background-color: var(--theme);
+  z-index: -1;
+  border-radius: 5px 0 5px 0;
+}
+
+#name-product::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -0.2rem;
+  width: 50%;
+  height: 0.4rem;
+  background-color: var(--theme);
+  z-index: -1;
+  border-radius: 0 5px 0 5px;
+}
+
+.size-product-contain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.size-product-contain span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.size-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.size {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 2px solid var(--theme);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.size:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  border-color: transparent;
+}
+
+.values-product {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.values-product p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#old-value {
+  text-decoration: line-through;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.payment-methods span,
+.calculate-shipping span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.payments {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.payments:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
+
+.payments i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.btn-buy {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--theme);
+  padding: 15px;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+  transition: 0.3s;
+}
+
+.calculate-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.calculate-shipping input {
+  width: 45%;
+  padding: 12px;
+  background-color: var(--input);
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid var(--theme);
+}
+
+.btn-calc {
+  border: 2px solid var(--theme);
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.btn-calc:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  border-color: transparent;
+}
+
+.back-home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.back-home a {
+  min-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.back-home a:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s all;
+  background-color: rgba(0, 0, 0, 0.877);
+}
